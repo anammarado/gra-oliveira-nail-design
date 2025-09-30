@@ -1,8 +1,11 @@
 "use client";
-import { useState } from "react";
+
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Cormorant_Upright } from "next/font/google";
+import { useTranslations, useLocale } from "next-intl";
+import { usePathname } from "next/navigation";
 
 const cormorantUpright = Cormorant_Upright({
   subsets: ["latin"],
@@ -11,13 +14,20 @@ const cormorantUpright = Cormorant_Upright({
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const t = useTranslations();
+  const locale = useLocale();
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
 
   return (
     <header
       className={`w-full bg-black shadow-md ${cormorantUpright.className} h-26 relative`}
     >
       <div className="flex items-center justify-between w-full h-full px-4">
-        <Link href="/" className="flex items-center pl-2">
+        <Link href={`/${locale}`} className="flex items-center pl-2">
           <Image
             src="/logo.png"
             alt="Gra Oliveira Logo"
@@ -33,41 +43,41 @@ export default function Header() {
           onClick={() => setMenuOpen((open) => !open)}
           aria-label="Open menu"
         >
-          <span className="block w-6 h-0.5 bg-brand-gold mb-1"></span>
-          <span className="block w-6 h-0.5 bg-brand-gold mb-1"></span>
-          <span className="block w-6 h-0.5 bg-brand-gold"></span>
+          <span className="block w-6 h-0.5 bg-brand-gold mb-1" />
+          <span className="block w-6 h-0.5 bg-brand-gold mb-1" />
+          <span className="block w-6 h-0.5 bg-brand-gold" />
         </button>
 
         <nav className="hidden pr-2 space-x-6 text-2xl font-bold md:flex">
           <Link
-            href="#"
+            href={`/${locale}`}
             className="font-bold text-brand-gold hover:text-gold-500"
           >
-            Agenda Online
+            {t("agendaOnline")}
           </Link>
           <Link
-            href="#"
+            href={`/${locale}`}
             className="font-bold text-brand-gold hover:text-gold-500"
           >
-            Formação
+            {t("formação")}
           </Link>
           <Link
-            href="#"
+            href={`/${locale}`}
             className="font-bold text-brand-gold hover:text-gold-500"
           >
-            Galeria
+            {t("galeria")}
           </Link>
           <Link
-            href="#"
+            href={`/${locale}`}
             className="font-bold text-brand-gold hover:text-gold-500"
           >
-            Parcerias
+            {t("parcerias")}
           </Link>
           <Link
-            href="#"
+            href={`/${locale}`}
             className="font-bold text-brand-gold hover:text-gold-500"
           >
-            Eventos
+            {t("eventos")}
           </Link>
         </nav>
       </div>
@@ -75,39 +85,34 @@ export default function Header() {
       {menuOpen && (
         <nav className="absolute left-0 z-40 flex flex-col items-center w-full py-4 bg-black shadow-md top-full md:hidden">
           <Link
-            href="#"
+            href={`/${locale}`}
             className="py-2 text-lg font-bold text-brand-gold hover:text-gold-500"
-            onClick={() => setMenuOpen(false)}
           >
-            Agenda Online
+            {t("agendaOnline")}
           </Link>
           <Link
-            href="#"
+            href={`/${locale}`}
             className="py-2 text-lg font-bold text-brand-gold hover:text-gold-500"
-            onClick={() => setMenuOpen(false)}
           >
-            Formação
+            {t("formação")}
           </Link>
           <Link
-            href="#"
+            href={`/${locale}`}
             className="py-2 text-lg font-bold text-brand-gold hover:text-gold-500"
-            onClick={() => setMenuOpen(false)}
           >
-            Galeria
+            {t("galeria")}
           </Link>
           <Link
-            href="#"
+            href={`/${locale}`}
             className="py-2 text-lg font-bold text-brand-gold hover:text-gold-500"
-            onClick={() => setMenuOpen(false)}
           >
-            Parcerias
+            {t("parcerias")}
           </Link>
           <Link
-            href="#"
+            href={`/${locale}`}
             className="py-2 text-lg font-bold text-brand-gold hover:text-gold-500"
-            onClick={() => setMenuOpen(false)}
           >
-            Eventos
+            {t("eventos")}
           </Link>
         </nav>
       )}

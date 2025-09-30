@@ -23,3 +23,10 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.text-brand-gold { color: var(--brand-gold) !important; }
+.bg-brand-gold { background-color: var(--brand-gold) !important; }
+.text-brand-pink { color: var(--brand-pink) !important; }
+.bg-brand-pink { background-color: var(--brand-pink) !important; }
+.hover\:text-gold-500:hover { color: #FFC700 !important; }
+.focus\:ring-brand-gold:focus { box-shadow: 0 0 0 3px rgba(219,176,75,0.25) !important; }
