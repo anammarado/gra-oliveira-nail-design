@@ -3,5 +3,19 @@
   "formação": "Training",
   "galeria": "Gallery",
   "parcerias": "Partners",
-  "eventos": "Events"
+  "eventos": "Events",
+  "termos" : "Terms and Conditions",
+  "social": {
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "localização": "Location",
+    "whatsapp": "WhatsApp"
+  },
+  "bandeiras": {
+    "pt": "Portuguese",
+    "en": "English",
+    "es": "Spanish",
+    "fr": "French"
+  },
+  "direitosReservados": "All rights reserved."
 }
