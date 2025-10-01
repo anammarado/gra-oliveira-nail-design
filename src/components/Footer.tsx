@@ -18,18 +18,18 @@ export default function Footer() {
     <footer
       className={`w-full bg-black text-brand-gold shadow-md h-26 mt-12 ${cormorantUpright.className}`}
     >
-      <div className="flex items-center w-full h-full px-4 gap-6">
-        <div className="flex-1">
+      <div className="flex flex-col md:flex-row items-center md:items-center w-full h-full px-4 md:justify-between gap-6">
+        <div className="w-full md:flex-1">
           <Link
             href="/terms"
-            className="font-bold hover:text-gold-500 transition text-xl"
+            className="font-bold hover:text-gold-500 transition text-xl text-center md:text-left"
           >
             {t("termos")}
           </Link>
         </div>
 
-        <div className="flex-1 flex justify-center">
-          <div className="flex items-center space-x-8 text-2xl">
+        <div className="w-full md:flex-1 flex justify-center mt-4 md:mt-0">
+          <div className="flex items-center space-x-6 md:space-x-8 text-2xl">
             <Link
               href="https://www.instagram.com/graoliveiraa_/#"
               target="_blank"
@@ -37,7 +37,7 @@ export default function Footer() {
               aria-label={t("social.instagram")}
               className="hover:text-gold-500 transition flex items-center"
             >
-              <Instagram size={36} />
+              <Instagram className="w-7 h-7 md:w-9 md:h-9" />
             </Link>
             <Link
               href="https://www.facebook.com/share/19hqNKE8Ki/?mibextid=wwXIfr"
@@ -46,7 +46,7 @@ export default function Footer() {
               aria-label={t("social.facebook")}
               className="hover:text-gold-500 transition flex items-center"
             >
-              <Facebook size={36} />
+              <Facebook className="w-7 h-7 md:w-9 md:h-9" />
             </Link>
             <Link
               href="http://maps.app.goo.gl/ta55s7oxp6i3v5bW6"
@@ -55,7 +55,7 @@ export default function Footer() {
               aria-label={t("social.localização")}
               className="hover:text-gold-500 transition flex items-center"
             >
-              <MapPin size={36} />
+              <MapPin className="w-7 h-7 md:w-9 md:h-9" />
             </Link>
             <Link
               href="https://wa.me/351919506691"
@@ -64,12 +64,12 @@ export default function Footer() {
               aria-label={t("social.whatsapp")}
               className="hover:text-gold-500 transition flex items-center"
             >
-              <MessageCircle size={36} />
+              <MessageCircle className="w-7 h-7 md:w-9 md:h-9" />
             </Link>
           </div>
         </div>
 
-        <div className="flex-1 flex flex-col items-center md:items-end">
+        <div className="w-full md:flex-1 flex flex-col items-center md:items-end mt-4 md:mt-0">
           <p className="font-bold text-lg text-center md:text-right">
             © {new Date().getFullYear()} Gra Oliveira Nail Design.{" "}
             {t("direitosReservados")}
