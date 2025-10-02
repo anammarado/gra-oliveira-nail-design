@@ -2,7 +2,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Cormorant_Upright } from "next/font/google";
-import { Facebook, Instagram, MessageCircle, MapPin } from "lucide-react";
+import { MessageCircle, MapPin } from "lucide-react";
+import { SiFacebook, SiInstagram } from "react-icons/si";
 import { useLocale, useTranslations } from "next-intl";
 
 const cormorantUpright = Cormorant_Upright({
@@ -27,7 +28,6 @@ export default function Footer() {
             {t("terms")}
           </Link>
         </div>
-
         <div className="w-full md:flex-1 flex justify-center mt-4 md:mt-0">
           <div className="flex items-center space-x-6 md:space-x-8 text-2xl">
             <Link
@@ -37,7 +37,7 @@ export default function Footer() {
               aria-label={t("social.instagram")}
               className="hover:text-gold-500 transition flex items-center"
             >
-              <Instagram className="w-7 h-7 md:w-9 md:h-9" />
+              <SiInstagram className="w-7 h-7 md:w-9 md:h-9" />
             </Link>
             <Link
               href="https://www.facebook.com/share/19hqNKE8Ki/?mibextid=wwXIfr"
@@ -46,7 +46,7 @@ export default function Footer() {
               aria-label={t("social.facebook")}
               className="hover:text-gold-500 transition flex items-center"
             >
-              <Facebook className="w-7 h-7 md:w-9 md:h-9" />
+              <SiFacebook className="w-7 h-7 md:w-9 md:h-9" />
             </Link>
             <Link
               href="http://maps.app.goo.gl/ta55s7oxp6i3v5bW6"
@@ -68,13 +68,11 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-
         <div className="w-full md:flex-1 flex flex-col items-center md:items-end mt-4 md:mt-0">
           <p className="font-bold text-lg text-center md:text-right">
             © {new Date().getFullYear()} Gra Oliveira Nail Design.{" "}
             {t("copyright")}
           </p>
-
           <div className="flex items-center justify-center md:justify-end space-x-4 md:space-x-6 mt-4">
             <Link href="/pt" aria-label="Português">
               <span
