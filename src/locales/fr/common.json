@@ -1,21 +1,21 @@
 {
-  "agendaOnline": "Agenda en ligne",
-  "formação": "Formation", 
-  "galeria": "Galerie",
-  "parcerias": "Partenaires",
-  "eventos": "Événements",
-  "termos" : "Termes et Conditions",
+  "onlineSchedule": "Agenda en ligne",
+  "training": "Formation", 
+  "gallery": "Galerie",
+  "partnerships": "Partenariats",
+  "events": "Événements",
+  "terms": "Termes et Conditions",
   "social": {
     "instagram": "Instagram",
     "facebook": "Facebook",
-    "localização": "Localisation",
+    "location": "Localisation",
     "whatsapp": "WhatsApp"
   },
-  "bandeiras": {
+  "flags": {
     "pt": "Portuguais",
     "en": "Anglais",
     "es": "Espagnol",
     "fr": "Français"
   },
-  "direitosReservados": "Tous les droits réservés."
+  "copyright": "Tous les droits réservés."
 }

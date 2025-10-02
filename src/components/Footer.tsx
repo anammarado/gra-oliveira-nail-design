@@ -24,7 +24,7 @@ export default function Footer() {
             href="/terms"
             className="font-bold hover:text-gold-500 transition text-xl text-center md:text-left"
           >
-            {t("termos")}
+            {t("terms")}
           </Link>
         </div>
 
@@ -52,7 +52,7 @@ export default function Footer() {
               href="http://maps.app.goo.gl/ta55s7oxp6i3v5bW6"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={t("social.localização")}
+              aria-label={t("social.location")}
               className="hover:text-gold-500 transition flex items-center"
             >
               <MapPin className="w-7 h-7 md:w-9 md:h-9" />
@@ -72,7 +72,7 @@ export default function Footer() {
         <div className="w-full md:flex-1 flex flex-col items-center md:items-end mt-4 md:mt-0">
           <p className="font-bold text-lg text-center md:text-right">
             © {new Date().getFullYear()} Gra Oliveira Nail Design.{" "}
-            {t("direitosReservados")}
+            {t("copyright")}
           </p>
 
           <div className="flex items-center justify-center md:justify-end space-x-4 md:space-x-6 mt-4">
