@@ -3,5 +3,19 @@
   "formação": "Formación",
   "galeria": "Galería",
   "parcerias": "Socios",
-  "eventos": "Eventos"
+  "eventos": "Eventos",
+  "termos" : "Términos y Condiciones",
+  "social": {
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "localização": "Ubicación",
+    "whatsapp": "WhatsApp"
+  },
+  "bandeiras": {
+    "pt": "Portugués",
+    "en": "Inglés",
+    "es": "Español",
+    "fr": "Francés"
+  },
+  "direitosReservados": "Todos los derechos reservados."
 }
