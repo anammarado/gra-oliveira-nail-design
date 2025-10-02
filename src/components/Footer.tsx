@@ -90,7 +90,7 @@ export default function Footer() {
               >
                 <Image
                   src="/flags/pt.svg"
-                  alt={t("bandeiras.pt")}
+                  alt={t("flags.pt")}
                   width={24}
                   height={16}
                   className="object-cover rounded-sm"
@@ -111,7 +111,7 @@ export default function Footer() {
               >
                 <Image
                   src="/flags/en.svg"
-                  alt={t("bandeiras.en")}
+                  alt={t("flags.en")}
                   width={24}
                   height={16}
                   className="object-cover rounded-sm"
@@ -132,7 +132,7 @@ export default function Footer() {
               >
                 <Image
                   src="/flags/fr.svg"
-                  alt={t("bandeiras.fr")}
+                  alt={t("flags.fr")}
                   width={24}
                   height={16}
                   className="object-cover rounded-sm"
@@ -153,7 +153,7 @@ export default function Footer() {
               >
                 <Image
                   src="/flags/es.svg"
-                  alt={t("bandeiras.es")}
+                  alt={t("flags.es")}
                   width={24}
                   height={16}
                   className="object-cover rounded-sm"
