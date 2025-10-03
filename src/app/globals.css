@@ -37,3 +37,32 @@ body {
   .footer-right { align-items: center !important; justify-content: center !important; background: transparent !important; }
   footer { background: #000 !important; }
 }
+
+@media (max-width: 781px) {
+  footer {
+    min-height: 8rem !important;
+    height: auto !important;
+  }
+  .footer-inner {
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
+@media (min-width: 781px) {
+  footer {
+    height: 6.5rem !important;
+    min-height: 6.5rem !important;
+  }
+  .footer-inner {
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+  .footer-terms { text-align: left !important; }
+}
