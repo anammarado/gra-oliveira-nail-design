@@ -17,5 +17,12 @@
     "es": "Espagnol",
     "fr": "Français"
   },
-  "copyright": "Tous les droits réservés."
+  "copyright": "Tous les droits réservés.",
+   "introduction": {
+    "title": "Qui est Gra Oliveira?",
+    "description": "Je suis Gracielly Oliveira, plus connue sous le nom de Gra Oliveira, une Brésilienne originaire de Trás-os-Montes qui vit au Portugal depuis 20 ans et qui est là pour révolutionner l'industrie des ongles et transformer Trás-os-Montes!\n\nJe suis professionnelle des ongles depuis quatre ans, me concentrant sur des techniques qui privilégient le soin, l'élégance et le naturel.\n\nDans mon espace, situé à Macedo de Cavaleiros, je propose des services spécialisés pour les mains et les pieds, toujours avec le souci du détail et du bien-être de mes clientes.\n\nJe travaille également comme entraîneur, aidant les autres à transformer leur passion pour l'esthétique en une carrière solide et enrichissante.\n\nDécouvrez l'art du nail art avec Gra Oliveira !\n\nDécouvrez les services, réservez en ligne et découvrez la galerie de superbes créations ongulaires.",
+      "hero": {
+        "imageAlt": "Photo de Gra Oliveira"
+      }
+  }
 }
