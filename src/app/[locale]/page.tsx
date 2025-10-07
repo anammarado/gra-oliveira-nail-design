@@ -19,12 +19,12 @@ export default function LocaleHome() {
           className={`flex flex-col items-center w-full gap-4 text-center hero-text bp781:w-5/12 bp781:items-start bp781:text-left bp781:pl-0 bp781:-translate-x-6`}
         >
           <h1
-            className={`${handlee.className} text-3xl text-brand-gold font-bold mb-6`}
+            className={`${handlee.className} text-xl sm:text-2xl md:text-3xl text-brand-gold font-bold mb-6`}
           >
             {t("introduction.title") || "Gra Oliveira Nail Design"}
           </h1>
           <div
-            className={`${handlee.className} font-light w-full text-xl leading-relaxed text-muted bp781:text-4xl bp781:max-w-lg bp781:ml-0`}
+            className={`${handlee.className} font-light w-full text-base sm:text-lg md:text-xl bp781:text-4xl leading-relaxed text-muted bp781:max-w-lg bp781:ml-0`}
           >
             {(t("introduction.description") || "")
               .split("\n\n")
