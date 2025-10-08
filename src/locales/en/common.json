@@ -24,5 +24,15 @@
     "hero": {
       "imageAlt": "Photo of Gra Oliveira"
     }
+  }, 
+  "trainingPage": {
+    "title": "Why learn with Gra Oliveira?",
+    "description": "I believe that success starts with a good foundation — and that's why I've developed comprehensive and personalized training courses designed to guide you through every step of your journey in the beauty world.\n\nI offer beginner manicure training, ideal for those who want to learn everything from the basics to the most sought-after techniques.\n\nIf you already work in the field and want to hone your skills, the advanced manicure training will help you take your skills to the next level, focusing on durability, naturalness, and a perfect finish.\n\nFor those who want to explore their creativity, I also offer nail art and design training, for both beginners and professionals who want to hone their style. And, of course, pedicure training is essential for a complete and excellent service.\n\nDuring the training, we use gel polish, polygel, extensions with tips, F1 molds, and fiberglass, always with products from our partner brand Nails Divine, ensuring quality and durability in each technique.",
+    "imageAlt": "Training with Gra Oliveira",
+    "whatYouGet": "Bonuses included in your training",
+    "bullet1": "Coffee break: moments to relax and share experiences.",
+    "bullet2": "Exclusive workbook: containing all theoretical content of the training.",
+    "bullet3": "SIGO Certificate: officially recognized, valid nationwide.",
+    "bullet4": "Personalized support for 6 months: to continue your development after the course."
   }
 }
