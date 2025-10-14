@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Cormorant_Upright } from "next/font/google";
 import { useTranslations, useLocale } from "next-intl";
 import { usePathname } from "next/navigation";
+import TrainingPage from "@/app/[locale]/training/page";
 
 const cormorantUpright = Cormorant_Upright({
   subsets: ["latin"],
@@ -56,7 +57,7 @@ export default function Header() {
             {t("onlineSchedule")}
           </Link>
           <Link
-            href={`/${locale}`}
+            href={`/${locale}/training`}
             className="font-bold text-brand-gold hover:text-gold-500"
           >
             {t("training")}
