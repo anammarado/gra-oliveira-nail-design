@@ -20,7 +20,7 @@ export default function TrainingPage() {
   return (
     <div className="min-h-screen p-8 pb-12 sm:p-20">
       <main className="flex flex-col items-center gap-8 mx-auto max-w-screen-2xl hero bp781:flex-row bp781:items-start bp781:gap-16 bp781:justify-between">
-        <div className="flex flex-col items-center w-full gap-4 text-center hero-text bp781:w-5/12 bp781:items-start bp781:text-left">
+        <div className="flex flex-col items-center w-full gap-4 text-center hero-text bp781:w-5/12 bp781:items-start bp781:text-left self-start bp781:self-start">
           <h1
             className={`${handlee.className} mb-4 text-3xl font-bold text-brand-gold`}
           >
@@ -37,7 +37,7 @@ export default function TrainingPage() {
           </div>
         </div>
 
-        <div className="flex items-center justify-center w-full hero-image bp781:w-6/12 bp781:pl-6 bp781:justify-end">
+        <div className="flex items-center justify-center w-full hero-image bp781:w-6/12 bp781:pl-6 bp781:justify-end self-start bp781:self-start">
           <div className="flex flex-col items-center justify-center w-full h-auto max-w-md gap-4 rounded-lg shadow-lg bp781:gap-6 bp781:max-w-none">
             <Image
               src="/formadora 1.jpg"
