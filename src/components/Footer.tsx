@@ -6,6 +6,7 @@ import { Cormorant_Upright } from "next/font/google";
 import { MessageCircle, MapPin } from "lucide-react";
 import { SiFacebook, SiInstagram } from "react-icons/si";
 import { useLocale, useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 const cormorantUpright = Cormorant_Upright({
   subsets: ["latin"],
@@ -15,6 +16,16 @@ const cormorantUpright = Cormorant_Upright({
 export default function Footer() {
   const locale = useLocale();
   const t = useTranslations();
+  const pathname = usePathname();
+
+  const getLocaleHref = (targetLocale: string) => {
+    if (!pathname) return `/${targetLocale}`;
+    const m = pathname.match(/^\/(pt|en|es|fr)(\/.*|$)/);
+    if (m) {
+      return `/${targetLocale}${m[2] || ""}`;
+    }
+    return `/${targetLocale}${pathname === "/" ? "" : pathname}`;
+  };
 
   return (
     <footer
@@ -75,7 +86,7 @@ export default function Footer() {
             {t("copyright")}
           </p>
           <div className="flex items-center justify-center mt-4 space-x-4 md:justify-end bp781:justify-end md:space-x-6 bp781:space-x-6">
-            <Link href="/pt" aria-label="Português">
+            <Link href={getLocaleHref("pt")} aria-label="Português">
               <span
                 className="rounded-sm p-0.5"
                 style={
@@ -96,7 +107,7 @@ export default function Footer() {
                 />
               </span>
             </Link>
-            <Link href="/en" aria-label="English">
+            <Link href={getLocaleHref("en")} aria-label="English">
               <span
                 className="rounded-sm p-0.5"
                 style={
@@ -117,7 +128,7 @@ export default function Footer() {
                 />
               </span>
             </Link>
-            <Link href="/fr" aria-label="Français">
+            <Link href={getLocaleHref("fr")} aria-label="Français">
               <span
                 className="rounded-sm p-0.5"
                 style={
@@ -138,7 +149,7 @@ export default function Footer() {
                 />
               </span>
             </Link>
-            <Link href="/es" aria-label="Español">
+            <Link href={getLocaleHref("es")} aria-label="Español">
               <span
                 className="rounded-sm p-0.5"
                 style={
