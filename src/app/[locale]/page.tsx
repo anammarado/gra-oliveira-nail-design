@@ -21,12 +21,12 @@ export default function LocaleHome() {
           <h1
             className={`${handlee.className} text-xl sm:text-2xl md:text-3xl text-brand-gold font-bold mb-6`}
           >
-            {t("introduction.title") || "Gra Oliveira Nail Design"}
+            {t("introduction.title")}
           </h1>
           <div
             className={`${handlee.className} font-light w-full text-base sm:text-lg md:text-xl bp781:text-4xl leading-relaxed text-muted bp781:max-w-lg bp781:ml-0`}
           >
-            {(t("introduction.description") || "")
+            {(t("introduction.description"))
               .split("\n\n")
               .map((para, i) => (
                 <p key={i} className="mb-4 last:mb-0">
