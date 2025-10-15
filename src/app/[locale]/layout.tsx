@@ -30,8 +30,7 @@ export default async function LocaleLayout({
     locale: string;
   };
 }>) {
-  const awaited = await params;
-  const { locale } = awaited;
+  const { locale } = params;
   const messages = (await import(`@/locales/${locale}/common.json`)).default;
 
   return (

@@ -53,31 +53,31 @@ export default function Header() {
             href={`/${locale}`}
             className="font-bold text-brand-gold hover:text-gold-500"
           >
-            {t("onlineSchedule")}
+            {t("agendaOnline")}
           </Link>
           <Link
             href={`/${locale}`}
             className="font-bold text-brand-gold hover:text-gold-500"
           >
-            {t("training")}
+            {t("formação")}
           </Link>
           <Link
             href={`/${locale}`}
             className="font-bold text-brand-gold hover:text-gold-500"
           >
-            {t("gallery")}
+            {t("galeria")}
           </Link>
           <Link
             href={`/${locale}`}
             className="font-bold text-brand-gold hover:text-gold-500"
           >
-            {t("partnerships")}
+            {t("parcerias")}
           </Link>
           <Link
             href={`/${locale}`}
             className="font-bold text-brand-gold hover:text-gold-500"
           >
-            {t("events")}
+            {t("eventos")}
           </Link>
         </nav>
       </div>
@@ -88,31 +88,31 @@ export default function Header() {
             href={`/${locale}`}
             className="py-2 text-lg font-bold text-brand-gold hover:text-gold-500"
           >
-            {t("onlineSchedule")}
+            {t("agendaOnline")}
           </Link>
           <Link
             href={`/${locale}`}
             className="py-2 text-lg font-bold text-brand-gold hover:text-gold-500"
           >
-            {t("training")}
+            {t("formação")}
           </Link>
           <Link
             href={`/${locale}`}
             className="py-2 text-lg font-bold text-brand-gold hover:text-gold-500"
           >
-            {t("gallery")}
+            {t("galeria")}
           </Link>
           <Link
             href={`/${locale}`}
             className="py-2 text-lg font-bold text-brand-gold hover:text-gold-500"
           >
-            {t("partnerships")}
+            {t("parcerias")}
           </Link>
           <Link
             href={`/${locale}`}
             className="py-2 text-lg font-bold text-brand-gold hover:text-gold-500"
           >
-            {t("events")}
+            {t("eventos")}
           </Link>
         </nav>
       )}

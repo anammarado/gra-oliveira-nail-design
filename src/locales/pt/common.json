@@ -1,28 +1,21 @@
 {
-  "onlineSchedule": "Agenda Online",
-  "training": "Formação",
-  "gallery": "Galeria",
-  "partnerships": "Parcerias",
-  "events": "Eventos",
-  "terms" : "Termos e Condições",
+  "agendaOnline": "Agenda Online",
+  "formação": "Formação",
+  "galeria": "Galeria",
+  "parcerias": "Parcerias",
+  "eventos": "Eventos",
+  "termos" : "Termos e Condições",
   "social": {
     "instagram": "Instagram",
     "facebook": "Facebook",
-    "location": "Localização",
+    "localização": "Localização",
     "whatsapp": "WhatsApp"
   },
-  "flags": {
+  "bandeiras": {
     "pt": "Português",
     "en": "Inglês",
     "es": "Espanhol",
     "fr": "Francês"
   },
-  "copyright": "Todos os direitos reservados.", 
-  "introduction": {
-    "title": "Quem é Gra Oliveira?",
-    "description": "Sou Gracielly Oliveira, mais conhecida como Gra Oliveira, uma brasileira transmontana que vive em Portugal há 20 anos e que veio para revolucionar a indústria das unhas e transformar Trás-os-Montes!\n\nSou profissional de unhas há quatro anos, com foco em técnicas que valorizam o cuidado, a elegância e a naturalidade.\n\nNo meu espaço, localizado em Macedo de Cavaleiros, ofereço serviços especializados para mãos e pés, sempre com atenção aos detalhes e ao bem-estar dos meus clientes.\n\nAtualmente, também trabalho como formadora, ajudando outras pessoas a transformar a sua paixão pela estética em uma carreira sólida e gratificante.\n\nExperimente a arte do nail design com Gra Oliveira!\n\nExplore os serviços, agende online e descubra a galeria de criações de unhas deslumbrantes.",
-    "hero": {
-      "imageAlt": "Foto de Gra Oliveira"
-    }
-  }
+  "direitosReservados": "Todos os direitos reservados."
 }
