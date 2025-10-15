@@ -67,7 +67,7 @@ body {
   .hero-image {
     order: 2 !important;
     width: 100% !important;
-    margin-top: 0.75rem !important;
+    margin-top: 1.5rem !important;
     padding-left: 0.5rem !important;
     padding-right: 0.5rem !important;
     display: flex !important;
@@ -117,7 +117,7 @@ body {
   .min-h-screen { padding-bottom: 1rem !important; }
 
   .hero-image > div { width: min(300px, 92%) !important; }
-  .hero-image { margin-top: 0.25rem !important; }
+  .hero-image { margin-top: 1.5rem !important; }
 }
 
 @media (min-width: 781px) {

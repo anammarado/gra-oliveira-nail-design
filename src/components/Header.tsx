@@ -33,7 +33,7 @@ export default function Header() {
             alt="Gra Oliveira Logo"
             width={160}
             height={54}
-            className="object-contain w-40 mt-1 -mb-2"
+            className="object-contain w-40 mt-1"
             priority
           />
         </Link>
