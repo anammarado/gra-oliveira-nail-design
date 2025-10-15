@@ -1,21 +1,38 @@
 {
-  "agendaOnline": "Online Schedule",
-  "formação": "Training",
-  "galeria": "Gallery",
-  "parcerias": "Partners",
-  "eventos": "Events",
-  "termos" : "Terms and Conditions",
+  "onlineSchedule": "Online Schedule",
+  "training": "Training",
+  "gallery": "Gallery",
+  "partnerships": "Partnerships",
+  "events": "Events",
+  "terms": "Terms and Conditions",
   "social": {
     "instagram": "Instagram",
     "facebook": "Facebook",
-    "localização": "Location",
+    "location": "Location",
     "whatsapp": "WhatsApp"
   },
-  "bandeiras": {
+  "flags": {
     "pt": "Portuguese",
     "en": "English",
     "es": "Spanish",
     "fr": "French"
   },
-  "direitosReservados": "All rights reserved."
+  "copyright": "All rights reserved.", 
+  "introduction": {
+    "title": "Who is Gra Oliveira?",
+    "description": "I'm Gracielly Oliveira, better known as Gra Oliveira, a Brazilian from Trás-os-Montes who has lived in Portugal for 20 years and is here to revolutionize the nail industry and transform Trás-os-Montes!\n\nI've been a nail professional for four years, focusing on techniques that emphasize care, elegance, and naturalness.\n\nIn my space, located in Macedo de Cavaleiros, I offer specialized services for both hands and feet, always with attention to detail and the well-being of my clients.\n\nCurrently, I also work as a trainer, helping others transform their passion for aesthetics into a solid and rewarding career. Experience the art of nail design with Gra Oliveira. Explore our services, book online, and discover our gallery of stunning nail creations.",
+    "hero": {
+      "imageAlt": "Photo of Gra Oliveira"
+    }
+  }, 
+  "trainingPage": {
+    "title": "Why learn with Gra Oliveira?",
+    "description": "I believe that success starts with a good foundation — and that's why I've developed comprehensive and personalized training courses designed to guide you through every step of your journey in the beauty world.\n\nI offer beginner manicure training, ideal for those who want to learn everything from the basics to the most sought-after techniques.\n\nIf you already work in the field and want to hone your skills, the advanced manicure training will help you take your skills to the next level, focusing on durability, naturalness, and a perfect finish.\n\nFor those who want to explore their creativity, I also offer nail art and design training, for both beginners and professionals who want to hone their style. And, of course, pedicure training is essential for a complete and excellent service.\n\nDuring the training, we use gel polish, polygel, extensions with tips, F1 molds, and paper molds, always with products from our partner brand Nails Divine, ensuring quality and durability in each technique.",
+    "imageAlt": "Training with Gra Oliveira",
+    "whatYouGet": "Bonuses included in your training",
+    "bullet1": "Coffee break: moments to relax and share experiences.",
+    "bullet2": "Exclusive workbook: containing all theoretical content of the training.",
+    "bullet3": "SIGO Certificate: officially recognized, valid nationwide.",
+    "bullet4": "Personalized support for 6 months: to continue your development after the course."
+  }
 }

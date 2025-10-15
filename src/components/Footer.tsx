@@ -1,9 +1,12 @@
 "use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Cormorant_Upright } from "next/font/google";
-import { Facebook, Instagram, MessageCircle, MapPin } from "lucide-react";
+import { MessageCircle, MapPin } from "lucide-react";
+import { SiFacebook, SiInstagram } from "react-icons/si";
 import { useLocale, useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 const cormorantUpright = Cormorant_Upright({
   subsets: ["latin"],
@@ -13,70 +16,77 @@ const cormorantUpright = Cormorant_Upright({
 export default function Footer() {
   const locale = useLocale();
   const t = useTranslations();
+  const pathname = usePathname();
+
+  const getLocaleHref = (targetLocale: string) => {
+    if (!pathname) return `/${targetLocale}`;
+    const m = pathname.match(/^\/(pt|en|es|fr)(\/.*|$)/);
+    if (m) {
+      return `/${targetLocale}${m[2] || ""}`;
+    }
+    return `/${targetLocale}${pathname === "/" ? "" : pathname}`;
+  };
 
   return (
     <footer
-      className={`w-full bg-black text-brand-gold shadow-md h-26 mt-12 ${cormorantUpright.className}`}
+      className={`w-full bg-black text-brand-gold shadow-md min-h-32 bp781:h-26 mt-12 ${cormorantUpright.className}`}
     >
-      <div className="flex flex-col md:flex-row items-center md:items-center w-full h-full px-4 md:justify-between gap-6">
-        <div className="w-full md:flex-1">
+      <div className="flex flex-col items-center w-full h-full gap-6 px-4 md:flex-row bp781:flex-row md:items-center bp781:items-center md:justify-between bp781:justify-between footer-inner">
+        <div className="w-full md:flex-1 bp781:flex-1">
           <Link
             href="/terms"
-            className="font-bold hover:text-gold-500 transition text-xl text-center md:text-left"
+            className="text-xl font-bold text-center transition footer-terms hover:text-gold-500 bp781:text-left"
           >
-            {t("termos")}
+            {t("terms")}
           </Link>
         </div>
-
-        <div className="w-full md:flex-1 flex justify-center mt-4 md:mt-0">
-          <div className="flex items-center space-x-6 md:space-x-8 text-2xl">
+        <div className="flex justify-center w-full mt-4 md:flex-1 bp781:flex-1 md:mt-0 bp781:mt-0">
+          <div className="flex items-center space-x-6 text-2xl md:space-x-8 bp781:space-x-8">
             <Link
               href="https://www.instagram.com/graoliveiraa_/#"
               target="_blank"
               rel="noopener noreferrer"
               aria-label={t("social.instagram")}
-              className="hover:text-gold-500 transition flex items-center"
+              className="flex items-center transition hover:text-gold-500"
             >
-              <Instagram className="w-7 h-7 md:w-9 md:h-9" />
+              <SiInstagram className="w-7 h-7 md:w-9 md:h-9 bp781:w-9 bp781:h-9" />
             </Link>
             <Link
               href="https://www.facebook.com/share/19hqNKE8Ki/?mibextid=wwXIfr"
               target="_blank"
               rel="noopener noreferrer"
               aria-label={t("social.facebook")}
-              className="hover:text-gold-500 transition flex items-center"
+              className="flex items-center transition hover:text-gold-500"
             >
-              <Facebook className="w-7 h-7 md:w-9 md:h-9" />
+              <SiFacebook className="w-7 h-7 md:w-9 md:h-9 bp781:w-9 bp781:h-9" />
             </Link>
             <Link
               href="http://maps.app.goo.gl/ta55s7oxp6i3v5bW6"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={t("social.localização")}
-              className="hover:text-gold-500 transition flex items-center"
+              aria-label={t("social.location")}
+              className="flex items-center transition hover:text-gold-500"
             >
-              <MapPin className="w-7 h-7 md:w-9 md:h-9" />
+              <MapPin className="w-7 h-7 md:w-9 md:h-9 bp781:w-9 bp781:h-9" />
             </Link>
             <Link
               href="https://wa.me/351919506691"
               target="_blank"
               rel="noopener noreferrer"
               aria-label={t("social.whatsapp")}
-              className="hover:text-gold-500 transition flex items-center"
+              className="flex items-center transition hover:text-gold-500"
             >
-              <MessageCircle className="w-7 h-7 md:w-9 md:h-9" />
+              <MessageCircle className="w-7 h-7 md:w-9 md:h-9 bp781:w-9 bp781:h-9" />
             </Link>
           </div>
         </div>
-
-        <div className="w-full md:flex-1 flex flex-col items-center md:items-end mt-4 md:mt-0">
-          <p className="font-bold text-lg text-center md:text-right">
+        <div className="flex flex-col items-center w-full mt-4 md:flex-1 bp781:flex-1 md:items-end bp781:items-end md:mt-0 bp781:mt-0 footer-right">
+          <p className="text-lg font-bold text-center md:text-right bp781:text-right">
             © {new Date().getFullYear()} Gra Oliveira Nail Design.{" "}
-            {t("direitosReservados")}
+            {t("copyright")}
           </p>
-
-          <div className="flex items-center justify-center md:justify-end space-x-4 md:space-x-6 mt-4">
-            <Link href="/pt" aria-label="Português">
+          <div className="flex items-center justify-center mt-4 space-x-4 md:justify-end bp781:justify-end md:space-x-6 bp781:space-x-6">
+            <Link href={getLocaleHref("pt")} aria-label="Português">
               <span
                 className="rounded-sm p-0.5"
                 style={
@@ -90,14 +100,14 @@ export default function Footer() {
               >
                 <Image
                   src="/flags/pt.svg"
-                  alt={t("bandeiras.pt")}
+                  alt={t("flags.pt")}
                   width={24}
                   height={16}
                   className="object-cover rounded-sm"
                 />
               </span>
             </Link>
-            <Link href="/en" aria-label="English">
+            <Link href={getLocaleHref("en")} aria-label="English">
               <span
                 className="rounded-sm p-0.5"
                 style={
@@ -111,14 +121,14 @@ export default function Footer() {
               >
                 <Image
                   src="/flags/en.svg"
-                  alt={t("bandeiras.en")}
+                  alt={t("flags.en")}
                   width={24}
                   height={16}
                   className="object-cover rounded-sm"
                 />
               </span>
             </Link>
-            <Link href="/fr" aria-label="Français">
+            <Link href={getLocaleHref("fr")} aria-label="Français">
               <span
                 className="rounded-sm p-0.5"
                 style={
@@ -132,14 +142,14 @@ export default function Footer() {
               >
                 <Image
                   src="/flags/fr.svg"
-                  alt={t("bandeiras.fr")}
+                  alt={t("flags.fr")}
                   width={24}
                   height={16}
                   className="object-cover rounded-sm"
                 />
               </span>
             </Link>
-            <Link href="/es" aria-label="Español">
+            <Link href={getLocaleHref("es")} aria-label="Español">
               <span
                 className="rounded-sm p-0.5"
                 style={
@@ -153,7 +163,7 @@ export default function Footer() {
               >
                 <Image
                   src="/flags/es.svg"
-                  alt={t("bandeiras.es")}
+                  alt={t("flags.es")}
                   width={24}
                   height={16}
                   className="object-cover rounded-sm"

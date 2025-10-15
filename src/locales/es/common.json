@@ -1,21 +1,39 @@
 {
-  "agendaOnline": "Agenda Online",
-  "formação": "Formación",
-  "galeria": "Galería",
-  "parcerias": "Socios",
-  "eventos": "Eventos",
-  "termos" : "Términos y Condiciones",
+  "onlineSchedule": "Agenda Online",
+  "training": "Formación",
+  "gallery": "Galería",
+  "partnerships": "Asociaciones",
+  "events": "Eventos",
+  "terms": "Términos y Condiciones",
   "social": {
     "instagram": "Instagram",
     "facebook": "Facebook",
-    "localização": "Ubicación",
+    "location": "Ubicación",
     "whatsapp": "WhatsApp"
   },
-  "bandeiras": {
+  "flags": {
     "pt": "Portugués",
     "en": "Inglés",
     "es": "Español",
     "fr": "Francés"
   },
-  "direitosReservados": "Todos los derechos reservados."
+  "copyright": "Todos los derechos reservados.",
+  "introduction": {
+    "title": "¿Quién es Gra Oliveira?",
+  "description": "Soy Gracielly Oliveira, más conocida como Gra Oliveira, una brasileña de Trás-os-Montes que vive en Portugal desde hace 20 años y está aquí para revolucionar la industria de las uñas y transformar Trás-os-Montes.\n\nLlevo 4 años como profesional de las uñas, enfocándome en técnicas que priorizan el cuidado, la elegancia y la naturalidad.\n\nEn mi espacio, ubicado en Macedo de Cavaleiros, ofrezco servicios especializados para manos y pies, siempre con atención al detalle y al bienestar de mis clientas.\n\nActualmente, también trabajo como formadora, ayudando a otras a transformar su pasión por la estética en una carrera sólida y gratificante.\n\n¡Experimenta el arte del diseño de uñas con Gra Oliveira!\n\nExplora los servicios, reserva en línea y descubre la galería de impresionantes creaciones de uñas.",
+  "hero": {
+    "imageAlt": "Foto de Gra Oliveira"
+  }
+  }
+  ,
+  "trainingPage": {
+    "title": "¿Por qué aprender con Gra Oliveira?",
+    "description": "Creo que el éxito comienza con una buena base, y por eso he creado formaciones completas y personalizadas para guiarte en cada paso de tu camino en el mundo de la belleza.\n\nOfrezco formación para principiantes en manicura, ideal para quienes quieran aprender desde lo básico hasta las técnicas más demandadas.\n\nSi ya trabajas en el sector y quieres perfeccionar tus habilidades, la formación avanzada en manicura te ayudará a llevar tus capacidades al siguiente nivel, con foco en resistencia, naturalidad y un acabado perfecto.\n\nPara quienes desean explorar su creatividad, también ofrezco formaciones en Nail Art y Design, tanto para principiantes como para profesionales que quieran mejorar su estilo. Y, por supuesto, la formación en pedicura es fundamental para un servicio completo y de excelencia.\n\nDurante las formaciones usamos esmalte en gel, polygel, extensiones con tips, molde F1 y molde de papel, siempre con productos de nuestra marca asociada Nails Divine, garantizando calidad y durabilidad en cada técnica.",
+    "imageAlt": "Formación con Gra Oliveira",
+    "whatYouGet": "Bonificaciones incluidas en tu formación",
+    "bullet1": "Coffee break: momentos para relajarse y compartir experiencias.",
+    "bullet2": "Manual exclusivo: con todo el contenido teórico de la formación.",
+    "bullet3": "Certificado SIGO: reconocido oficialmente, con validez nacional.",
+    "bullet4": "Soporte personalizado por 6 meses: para que continúes evolucionando después de la formación."
+  }
 }

@@ -30,20 +30,15 @@ export default async function LocaleLayout({
     locale: string;
   };
 }>) {
-  const { locale } = params;
+  const awaited = await params;
+  const { locale } = awaited;
   const messages = (await import(`@/locales/${locale}/common.json`)).default;
 
   return (
-    <html lang={locale}>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </NextIntlClientProvider>
   );
 }
