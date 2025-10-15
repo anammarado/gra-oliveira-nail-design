@@ -1,21 +1,28 @@
 {
-  "agendaOnline": "Online Schedule",
-  "formação": "Training",
-  "galeria": "Gallery",
-  "parcerias": "Partners",
-  "eventos": "Events",
-  "termos" : "Terms and Conditions",
+  "onlineSchedule": "Online Schedule",
+  "training": "Training",
+  "gallery": "Gallery",
+  "partnerships": "Partnerships",
+  "events": "Events",
+  "terms": "Terms and Conditions",
   "social": {
     "instagram": "Instagram",
     "facebook": "Facebook",
-    "localização": "Location",
+    "location": "Location",
     "whatsapp": "WhatsApp"
   },
-  "bandeiras": {
+  "flags": {
     "pt": "Portuguese",
     "en": "English",
     "es": "Spanish",
     "fr": "French"
   },
-  "direitosReservados": "All rights reserved."
+  "copyright": "All rights reserved.", 
+  "introduction": {
+    "title": "Who is Gra Oliveira?",
+    "description": "I'm Gracielly Oliveira, better known as Gra Oliveira, a Brazilian from Trás-os-Montes who has lived in Portugal for 20 years and is here to revolutionize the nail industry and transform Trás-os-Montes!\n\nI've been a nail professional for four years, focusing on techniques that emphasize care, elegance, and naturalness.\n\nIn my space, located in Macedo de Cavaleiros, I offer specialized services for both hands and feet, always with attention to detail and the well-being of my clients.\n\nCurrently, I also work as a trainer, helping others transform their passion for aesthetics into a solid and rewarding career. Experience the art of nail design with Gra Oliveira. Explore our services, book online, and discover our gallery of stunning nail creations.",
+    "hero": {
+      "imageAlt": "Photo of Gra Oliveira"
+    }
+  }
 }
