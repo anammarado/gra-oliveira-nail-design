@@ -1,16 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 40">
-  <!-- Union Jack simplified for small flag usage -->
-  <rect width="60" height="40" fill="#012169" />
-  <!-- White diagonals -->
-  <path d="M0 0 L60 40 L60 32 L8 0 Z" fill="#fff" />
-  <path d="M60 0 L0 40 L0 32 L52 0 Z" fill="#fff" />
-  <!-- Red diagonals -->
-  <path d="M0 0 L60 40 L60 36 L4 0 Z" fill="#C8102E" />
-  <path d="M60 0 L0 40 L0 36 L56 0 Z" fill="#C8102E" />
-  <!-- White cross -->
-  <rect x="24" y="0" width="12" height="40" fill="#fff" />
-  <rect x="0" y="16" width="60" height="8" fill="#fff" />
-  <!-- Red cross -->
-  <rect x="26" y="0" width="8" height="40" fill="#C8102E" />
-  <rect x="0" y="17.5" width="60" height="5" fill="#C8102E" />
+  <rect width="60" height="40" fill="#012169"/>
+  <g fill="#fff">
+    <rect x="0" y="16" width="60" height="8"/>
+    <rect x="26" y="0" width="8" height="40"/>
+  </g>
+  <g stroke="#C8102E" stroke-width="2">
+    <line x1="0" y1="0" x2="60" y2="40" />
+    <line x1="60" y1="0" x2="0" y2="40" />
+  </g>
 </svg>
