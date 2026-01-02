@@ -32,67 +32,67 @@ body {
 .focus\:ring-brand-gold:focus { box-shadow: 0 0 0 3px rgba(219,176,75,0.25) !important; }
 
 @media (max-width: 781px) {
-  .footer-inner { display: flex; flex-direction: column !important; align-items: center !important; }
-  .footer-terms { text-align: center !important; width: 100% !important; display: block !important; }
-  .footer-right { align-items: center !important; justify-content: center !important; background: transparent !important; }
-  footer { background: #000 !important; }
+  footer .footer-inner { display: flex; flex-direction: column; align-items: center; }
+  footer .footer-terms { text-align: center; width: 100%; display: block; }
+  footer .footer-right { align-items: center; justify-content: center; background: transparent; }
+  footer { background: #000; }
 }
 
 @media (max-width: 781px) {
   footer {
-    min-height: 8rem !important;
-    height: auto !important;
+    min-height: 8rem;
+    height: auto;
   }
-  .footer-inner {
-    height: 100% !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
+  footer .footer-inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  .hero {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 1rem !important;
+  main.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
-  .hero-text {
-    order: 1 !important;
-    width: 100% !important;
-    text-align: center !important;
-    padding-left: 0.5rem !important;
-    padding-right: 0.5rem !important;
+  main.hero .hero-text {
+    order: 1;
+    width: 100%;
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
-  .hero-image {
-    order: 2 !important;
-    width: 100% !important;
-    margin-top: 1.5rem !important;
-    padding-left: 0.5rem !important;
-    padding-right: 0.5rem !important;
-    display: flex !important;
-    justify-content: center !important;
+  main.hero .hero-image {
+    order: 2;
+    width: 100%;
+    margin-top: 1.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: flex;
+    justify-content: center;
   }
-  .hero-image > div {
-    width: min(340px, 92%) !important;
-    height: auto !important;
-    overflow: hidden !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
+  main.hero .hero-image > div {
+    width: min(340px, 92%);
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .hero-image img {
-    position: relative !important;
-    z-index: 0 !important;
-    max-width: 100% !important;
-    height: auto !important;
-    display: block !important;
-    margin: 0 auto !important;
+  main.hero .hero-image img {
+    position: relative;
+    z-index: 0;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
   
   footer {
-    position: relative !important;
-    z-index: 20 !important;
+    position: relative;
+    z-index: 20;
   }
 
   .hero-text,
@@ -134,13 +134,37 @@ body {
   }
   .footer-terms { text-align: left !important; }
 
-  .hero { display: flex; flex-direction: row; align-items: center; }
-  .hero-text { text-align: left !important; align-items: flex-start !important; }
-  .hero-image { display: flex; justify-content: flex-end !important; }
+  main.hero { display: flex; flex-direction: row; align-items: center; }
+  main.hero .hero-text { text-align: left; align-items: flex-start; }
+  main.hero .hero-image { display: flex; justify-content: flex-end; }
 
-  .hero { justify-content: space-between !important; }
-  .hero-text { max-width: 48% !important; margin-left: 0 !important; padding-left: 0.5rem !important; }
-  .hero-image { max-width: 50% !important; padding-right: 0.75rem !important; }
-  .hero-image > div { overflow: visible !important; display: flex !important; align-items: center !important; justify-content: flex-end !important; }
-  .hero-image img { object-fit: contain !important; max-width: 100% !important; height: auto !important; }
+  main.hero { justify-content: space-between; }
+  main.hero .hero-text { max-width: 48%; margin-left: 0; padding-left: 0.5rem; }
+  main.hero .hero-image { max-width: 50%; padding-right: 0.75rem; }
+  main.hero .hero-image > div:not(.hero-image-grid) { overflow: visible; display: flex; align-items: center; justify-content: flex-end; }
+
+  main.hero .hero-image > .hero-image-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    main.hero .hero-image > .hero-image-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+
+  main.hero .hero-image img { object-fit: contain; max-width: 100%; height: auto; }
+  main.hero .hero-image > .hero-image-offset { padding-top: 2rem; padding-bottom: 2rem; }
+  main.hero > .hero-image.hero-frame-offset { margin-top: 4rem; }
+}
+
+/* Keep the header logo aspect ratio when Tailwind width utilities adjust size */
+header a > img[src$="/logo.png"] {
+  height: auto;
+}
+
+/* More robust selector for Next/Image output: match the Tailwind logo classes */
+header img.object-contain.w-40 {
+  height: auto !important;
 }
